@@ -8,7 +8,7 @@ const Weather = () => {
     const [city, setCity] = useState("")
 
     const getWeather = () => {
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city || "istanbul"},tr&APPID=4175295206b8796d7550667f9cbc96ea&units=metric`)
+        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city || "istanbul"},tr&APPID=KEY_HERE&units=metric`)
             .then(res => res = res.json())
             .then(
                 (result) => {
