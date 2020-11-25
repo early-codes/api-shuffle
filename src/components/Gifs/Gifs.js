@@ -18,7 +18,7 @@ const Gifs = () => {
     }
 
     const getGif = () => {
-        fetch(`https://api.giphy.com/v1/gifs/random?api_key=O1JDQLinoSjz90WojiKtYQKaaO39C1C3&tag=${subject}&rating=g`, { mode: 'cors' })
+        fetch(`https://api.giphy.com/v1/gifs/random?api_key=KEY_HERE&tag=${subject}&rating=g`, { mode: 'cors' })
             .then(function (response) {
                 return response.json();
             })
